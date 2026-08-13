@@ -95,7 +95,7 @@ docker build -t zepto-support .
 
 Run the container:
 
-docker run -p 8000:8000 zepto-support
+docker run -p 8000:8000 zepto-support .
 
 Then open:
 
