@@ -1,0 +1,365 @@
+============================================================
+Query 1 - SELECT and WHERE
+============================================================
+
+SQL:
+SELECT title, price_gbp, rating
+FROM books
+WHERE rating >= 4;
+
+Output:
+                                                                   title  price_gbp  rating
+      Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond      49.43       4
+                                        A Year in Provence (Provence #1)      56.88       4
+                                      1,000 Places to See Before You Die      26.08       5
+                                                           Sharp Objects      47.82       4
+                                                     The Past Never Ends      56.50       4
+                         The Murder of Roger Ackroyd (Hercule Poirot #4)      44.10       4
+                                  A Time of Torment (Charlie Parker #14)      48.35       5
+                   Murder at the 42nd Street Library (Raymond Ambler #1)      54.36       4
+       What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37       5
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)      52.30       5
+                        Delivering the Truth (Quaker Midwife Mystery #1)      20.89       4
+                     The Mysterious Affair at Styles (Hercule Poirot #1)      24.80       4
+                                       The Silkworm (Cormoran Strike #2)      23.05       5
+  The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+                                                       The Girl You Lost      12.29       5
+                                 A Flight of Arrows (The Pathfinders #2)      55.53       5
+                                                            Mrs. Houdini      30.25       5
+                                               The Marriage of Opposites      28.08       4
+                                                       A Paris Apartment      39.01       4
+                         World Without End (The Pillars of the Earth #2)      32.97       4
+                                                   The Passion of Dolssa      28.32       5
+                                                  Voyager (Outlander #3)      21.07       5
+                                                            The Red Tent      35.66       5
+                                                  Between Shades of Gray      20.79       5
+                                                     While You Were Mine      41.32       5
+                                                   Lost Among the Living      27.70       4
+                       A Spy's Devotion (The Regency Spies of London #1)      16.97       5
+      Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond      49.43       4
+                                        A Year in Provence (Provence #1)      56.88       4
+                                      1,000 Places to See Before You Die      26.08       5
+                                                           Sharp Objects      47.82       4
+                                                     The Past Never Ends      56.50       4
+                         The Murder of Roger Ackroyd (Hercule Poirot #4)      44.10       4
+                                  A Time of Torment (Charlie Parker #14)      48.35       5
+                   Murder at the 42nd Street Library (Raymond Ambler #1)      54.36       4
+       What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37       5
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)      52.30       5
+                        Delivering the Truth (Quaker Midwife Mystery #1)      20.89       4
+                     The Mysterious Affair at Styles (Hercule Poirot #1)      24.80       4
+                                       The Silkworm (Cormoran Strike #2)      23.05       5
+  The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+                                                       The Girl You Lost      12.29       5
+                                 A Flight of Arrows (The Pathfinders #2)      55.53       5
+                                                            Mrs. Houdini      30.25       5
+                                               The Marriage of Opposites      28.08       4
+                                                       A Paris Apartment      39.01       4
+                         World Without End (The Pillars of the Earth #2)      32.97       4
+                                                   The Passion of Dolssa      28.32       5
+                                                  Voyager (Outlander #3)      21.07       5
+                                                            The Red Tent      35.66       5
+                                                  Between Shades of Gray      20.79       5
+                                                     While You Were Mine      41.32       5
+                                                   Lost Among the Living      27.70       4
+                       A Spy's Devotion (The Regency Spies of London #1)      16.97       5
+
+============================================================
+Query 2 - ORDER BY
+============================================================
+
+SQL:
+SELECT title, price_gbp, rating
+FROM books
+ORDER BY price_gbp DESC;
+
+Output:
+                                                                                            title  price_gbp  rating
+                                                                    Boar Island (Anna Pigeon #19)      59.48       3
+                                                                    Boar Island (Anna Pigeon #19)      59.48       3
+                           The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+                           The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+                                                                 A Year in Provence (Provence #1)      56.88       4
+                                                                 A Year in Provence (Provence #1)      56.88       4
+                                                                              The Past Never Ends      56.50       4
+                                                                              The Past Never Ends      56.50       4
+                                                                 The Last Painting of Sara de Vos      55.55       2
+                                                                 The Last Painting of Sara de Vos      55.55       2
+                                                          A Flight of Arrows (The Pathfinders #2)      55.53       5
+                                                          A Flight of Arrows (The Pathfinders #2)      55.53       5
+                                            Murder at the 42nd Street Library (Raymond Ambler #1)      54.36       4
+                                            Murder at the 42nd Street Library (Raymond Ambler #1)      54.36       4
+                                                                   The Last Mile (Amos Decker #2)      54.21       2
+                                                                   The Last Mile (Amos Decker #2)      54.21       2
+                                                              1st to Die (Women's Murder Club #1)      53.98       1
+                                                              1st to Die (Women's Murder Club #1)      53.98       1
+                                                                               Tipping the Velvet      53.74       1
+                                                                               Tipping the Velvet      53.74       1
+                         The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)      52.30       5
+                         The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)      52.30       5
+                                                The Guernsey Literary and Potato Peel Pie Society      49.53       1
+                                                The Guernsey Literary and Potato Peel Pie Society      49.53       1
+                               Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond      49.43       4
+                               Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond      49.43       4
+                               See America: A Celebration of Our National Parks & Treasured Sites      48.87       3
+                               See America: A Celebration of Our National Parks & Treasured Sites      48.87       3
+                                                           A Time of Torment (Charlie Parker #14)      48.35       5
+                                                           A Time of Torment (Charlie Parker #14)      48.35       5
+                                                                                    Sharp Objects      47.82       4
+                                                                                    Sharp Objects      47.82       4
+                                                                            Girl in the Blue Coat      46.83       2
+                                                                            Girl in the Blue Coat      46.83       2
+                                                  Glory over Everything: Beyond The Kitchen House      45.84       3
+                                                  Glory over Everything: Beyond The Kitchen House      45.84       3
+                                                                          It's Only the Himalayas      45.17       2
+                                                                          It's Only the Himalayas      45.17       2
+                                                                               A Summer In Europe      44.34       2
+                                                                               A Summer In Europe      44.34       2
+                                                  The Murder of Roger Ackroyd (Hercule Poirot #4)      44.10       4
+                                                  The Murder of Roger Ackroyd (Hercule Poirot #4)      44.10       4
+                                                                                       The Exiled      43.45       3
+                                                                                       The Exiled      43.45       3
+                                                                              While You Were Mine      41.32       5
+                                                                              While You Were Mine      41.32       5
+                                                                                A Paris Apartment      39.01       4
+                                                                                A Paris Apartment      39.01       4
+                                                        Neither Here nor There: Travels in Europe      38.95       3
+                                                        Neither Here nor There: Travels in Europe      38.95       3
+                                                            In the Woods (Dublin Murder Squad #1)      38.38       2
+                                                            In the Woods (Dublin Murder Squad #1)      38.38       2
+                                                                           The Invention of Wings      37.34       1
+                                                                           The Invention of Wings      37.34       1
+                                                                             Under the Tuscan Sun      37.33       3
+                                                                             Under the Tuscan Sun      37.33       3
+                                                                            The House by the Lake      36.95       1
+                                                                            The House by the Lake      36.95       1
+                              Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel      36.94       2
+                              Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel      36.94       2
+                                                                                     The Red Tent      35.66       5
+                                                                                     The Red Tent      35.66       5
+                                                                                      Most Wanted      35.28       3
+                                                                                      Most Wanted      35.28       3
+                                                                                The Secret Healer      34.56       3
+                                                                                The Secret Healer      34.56       3
+                                                  World Without End (The Pillars of the Earth #2)      32.97       4
+                                                  World Without End (The Pillars of the Earth #2)      32.97       4
+                                                                         The Great Railway Bazaar      30.54       1
+                                                                         The Great Railway Bazaar      30.54       1
+                                                                                     Mrs. Houdini      30.25       5
+                                                                                     Mrs. Houdini      30.25       5
+                        Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton      29.69       3
+                        Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton      29.69       3
+                                                                            The Passion of Dolssa      28.32       5
+                                                                            The Passion of Dolssa      28.32       5
+                                                                        The Marriage of Opposites      28.08       4
+                                                                        The Marriage of Opposites      28.08       4
+                                                                            Lost Among the Living      27.70       4
+                                                                            Lost Among the Living      27.70       4
+                                                                                        The Widow      27.26       2
+                                                                                        The Widow      27.26       2
+                                                                 Poisonous (Max Revere Novels #3)      26.80       3
+                                                                 Poisonous (Max Revere Novels #3)      26.80       3
+                                                                        Girl With a Pearl Earring      26.77       1
+                                                                        Girl With a Pearl Earring      26.77       1
+                                                               1,000 Places to See Before You Die      26.08       5
+                                                               1,000 Places to See Before You Die      26.08       5
+                                                                                         Starlark      25.83       3
+                                                                                         Starlark      25.83       3
+                                                               Extreme Prey (Lucas Davenport #26)      25.40       3
+                                                               Extreme Prey (Lucas Davenport #26)      25.40       3
+                                What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37       5
+                                What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37       5
+                                              The Mysterious Affair at Styles (Hercule Poirot #1)      24.80       4
+                                              The Mysterious Affair at Styles (Hercule Poirot #1)      24.80       4
+                                                              Career of Evil (Cormoran Strike #3)      24.72       2
+                                                              Career of Evil (Cormoran Strike #3)      24.72       2
+The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)      23.21       1
+The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)      23.21       1
+                                                                The Silkworm (Cormoran Strike #2)      23.05       5
+                                                                The Silkworm (Cormoran Strike #2)      23.05       5
+                                                                           Voyager (Outlander #3)      21.07       5
+                                                                           Voyager (Outlander #3)      21.07       5
+                                                 Delivering the Truth (Quaker Midwife Mystery #1)      20.89       4
+                                                 Delivering the Truth (Quaker Midwife Mystery #1)      20.89       4
+                                                                           Between Shades of Gray      20.79       5
+                                                                           Between Shades of Gray      20.79       5
+                                                                             Love, Lies and Spies      20.55       2
+                                                                             Love, Lies and Spies      20.55       2
+                                                             Blood Defense (Samantha Brinkman #1)      20.30       3
+                                                             Blood Defense (Samantha Brinkman #1)      20.30       3
+                                                                             In a Dark, Dark Wood      19.63       1
+                                                                             In a Dark, Dark Wood      19.63       1
+                                                        The Cuckoo's Calling (Cormoran Strike #1)      19.21       1
+                                                        The Cuckoo's Calling (Cormoran Strike #1)      19.21       1
+                                                                                      Lilac Girls      17.28       2
+                                                                                      Lilac Girls      17.28       2
+                                                A Spy's Devotion (The Regency Spies of London #1)      16.97       5
+                                                A Spy's Devotion (The Regency Spies of London #1)      16.97       5
+                                                          A Study in Scarlet (Sherlock Holmes #1)      16.73       2
+                                                          A Study in Scarlet (Sherlock Holmes #1)      16.73       2
+                                                                                 A Murder in Time      16.64       1
+                                                                                 A Murder in Time      16.64       1
+                                                       The Constant Princess (The Tudor Court #1)      16.62       3
+                                                       The Constant Princess (The Tudor Court #1)      16.62       3
+                                                        The Girl In The Ice (DCI Erika Foster #1)      15.85       3
+                                                        The Girl In The Ice (DCI Erika Foster #1)      15.85       3
+                                                           That Darkness (Gardiner and Renner #1)      13.92       1
+                                                           That Darkness (Gardiner and Renner #1)      13.92       1
+                                                                                Playing with Fire      13.71       3
+                                                                                Playing with Fire      13.71       3
+                                                                                The Girl You Lost      12.29       5
+                                                                                The Girl You Lost      12.29       5
+                                                                       Hide Away (Eve Duncan #20)      11.84       1
+                                                                       Hide Away (Eve Duncan #20)      11.84       1
+                                                             Tastes Like Fear (DI Marnie Rome #3)      10.69       1
+                                                             Tastes Like Fear (DI Marnie Rome #3)      10.69       1
+
+============================================================
+Query 3 - LIMIT
+============================================================
+
+SQL:
+SELECT title, price_gbp, rating
+FROM books
+ORDER BY price_gbp DESC
+LIMIT 10;
+
+Output:
+                                                                 title  price_gbp  rating
+                                         Boar Island (Anna Pigeon #19)      59.48       3
+                                         Boar Island (Anna Pigeon #19)      59.48       3
+The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+                                      A Year in Provence (Provence #1)      56.88       4
+                                      A Year in Provence (Provence #1)      56.88       4
+                                                   The Past Never Ends      56.50       4
+                                                   The Past Never Ends      56.50       4
+                                      The Last Painting of Sara de Vos      55.55       2
+                                      The Last Painting of Sara de Vos      55.55       2
+
+============================================================
+Query 4 - DISTINCT
+============================================================
+
+SQL:
+SELECT DISTINCT rating
+FROM books
+ORDER BY rating;
+
+Output:
+ rating
+      1
+      2
+      3
+      4
+      5
+
+============================================================
+Query 5 - BETWEEN
+============================================================
+
+SQL:
+SELECT title, price_gbp, price_inr
+FROM books
+WHERE price_gbp BETWEEN 20 AND 40
+ORDER BY price_gbp;
+
+Output:
+                                                                                            title  price_gbp  price_inr
+                                                             Blood Defense (Samantha Brinkman #1)      20.30    2141.65
+                                                             Blood Defense (Samantha Brinkman #1)      20.30    2141.65
+                                                                             Love, Lies and Spies      20.55    2168.02
+                                                                             Love, Lies and Spies      20.55    2168.02
+                                                                           Between Shades of Gray      20.79    2193.34
+                                                                           Between Shades of Gray      20.79    2193.34
+                                                 Delivering the Truth (Quaker Midwife Mystery #1)      20.89    2203.90
+                                                 Delivering the Truth (Quaker Midwife Mystery #1)      20.89    2203.90
+                                                                           Voyager (Outlander #3)      21.07    2222.89
+                                                                           Voyager (Outlander #3)      21.07    2222.89
+                                                                The Silkworm (Cormoran Strike #2)      23.05    2431.78
+                                                                The Silkworm (Cormoran Strike #2)      23.05    2431.78
+The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)      23.21    2448.66
+The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)      23.21    2448.66
+                                                              Career of Evil (Cormoran Strike #3)      24.72    2607.96
+                                                              Career of Evil (Cormoran Strike #3)      24.72    2607.96
+                                              The Mysterious Affair at Styles (Hercule Poirot #1)      24.80    2616.40
+                                              The Mysterious Affair at Styles (Hercule Poirot #1)      24.80    2616.40
+                                What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37    2676.54
+                                What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37    2676.54
+                                                               Extreme Prey (Lucas Davenport #26)      25.40    2679.70
+                                                               Extreme Prey (Lucas Davenport #26)      25.40    2679.70
+                                                                                         Starlark      25.83    2725.06
+                                                                                         Starlark      25.83    2725.06
+                                                               1,000 Places to See Before You Die      26.08    2751.44
+                                                               1,000 Places to See Before You Die      26.08    2751.44
+                                                                        Girl With a Pearl Earring      26.77    2824.24
+                                                                        Girl With a Pearl Earring      26.77    2824.24
+                                                                 Poisonous (Max Revere Novels #3)      26.80    2827.40
+                                                                 Poisonous (Max Revere Novels #3)      26.80    2827.40
+                                                                                        The Widow      27.26    2875.93
+                                                                                        The Widow      27.26    2875.93
+                                                                            Lost Among the Living      27.70    2922.35
+                                                                            Lost Among the Living      27.70    2922.35
+                                                                        The Marriage of Opposites      28.08    2962.44
+                                                                        The Marriage of Opposites      28.08    2962.44
+                                                                            The Passion of Dolssa      28.32    2987.76
+                                                                            The Passion of Dolssa      28.32    2987.76
+                        Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton      29.69    3132.30
+                        Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton      29.69    3132.30
+                                                                                     Mrs. Houdini      30.25    3191.38
+                                                                                     Mrs. Houdini      30.25    3191.38
+                                                                         The Great Railway Bazaar      30.54    3221.97
+                                                                         The Great Railway Bazaar      30.54    3221.97
+                                                  World Without End (The Pillars of the Earth #2)      32.97    3478.34
+                                                  World Without End (The Pillars of the Earth #2)      32.97    3478.34
+                                                                                The Secret Healer      34.56    3646.08
+                                                                                The Secret Healer      34.56    3646.08
+                                                                                      Most Wanted      35.28    3722.04
+                                                                                      Most Wanted      35.28    3722.04
+                                                                                     The Red Tent      35.66    3762.13
+                                                                                     The Red Tent      35.66    3762.13
+                              Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel      36.94    3897.17
+                              Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel      36.94    3897.17
+                                                                            The House by the Lake      36.95    3898.23
+                                                                            The House by the Lake      36.95    3898.23
+                                                                             Under the Tuscan Sun      37.33    3938.31
+                                                                             Under the Tuscan Sun      37.33    3938.31
+                                                                           The Invention of Wings      37.34    3939.37
+                                                                           The Invention of Wings      37.34    3939.37
+                                                            In the Woods (Dublin Murder Squad #1)      38.38    4049.09
+                                                            In the Woods (Dublin Murder Squad #1)      38.38    4049.09
+                                                        Neither Here nor There: Travels in Europe      38.95    4109.23
+                                                        Neither Here nor There: Travels in Europe      38.95    4109.23
+                                                                                A Paris Apartment      39.01    4115.55
+                                                                                A Paris Apartment      39.01    4115.55
+
+============================================================
+Query 6 - JOIN
+============================================================
+
+SQL:
+SELECT
+    b.title,
+    c.category_name,
+    b.price_gbp,
+    b.rating,
+    b.in_stock
+FROM books AS b
+JOIN categories AS c
+    ON b.category_id = c.category_id
+ORDER BY b.rating DESC, b.price_gbp DESC
+LIMIT 10;
+
+Output:
+                                                                   title      category_name  price_gbp  rating  in_stock
+                                 A Flight of Arrows (The Pathfinders #2) Historical Fiction      55.53       5         1
+                                 A Flight of Arrows (The Pathfinders #2) Historical Fiction      55.53       5         1
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)            Mystery      52.30       5         1
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)            Mystery      52.30       5         1
+                                  A Time of Torment (Charlie Parker #14)            Mystery      48.35       5         1
+                                  A Time of Torment (Charlie Parker #14)            Mystery      48.35       5         1
+                                                     While You Were Mine Historical Fiction      41.32       5         1
+                                                     While You Were Mine Historical Fiction      41.32       5         1
+                                                            The Red Tent Historical Fiction      35.66       5         1
+                                                            The Red Tent Historical Fiction      35.66       5         1
+
