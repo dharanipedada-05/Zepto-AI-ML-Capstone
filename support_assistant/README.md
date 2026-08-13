@@ -95,7 +95,7 @@ docker build -t zepto-support .
 
 Run the container:
 
-docker run -p 8000:8000 zepto-support
+docker run -p 8000:8000 zepto-support .
 
 Then open:
 
@@ -105,4 +105,4 @@ The Swagger page can be used to test the /ask endpoint.
 
 ## Summary
 
-The support assistant uses local policy documents as its knowledge source. LangGraph handles the question routing, ChromaDB handles document retrieval, Pydantic keeps the response format consistent, and FastAPI provides the API. The application can also be built and run using Docker.
+The support assistant uses local policy documents as its knowledge source. LangGraph handles the question routing, ChromaDB handles document retrieval, Pydantic keeps the response format consistent and FastAPI provides the API. The application can also be built and run using Docker.
